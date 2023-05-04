@@ -1,0 +1,175 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+a:hover {
+  background-color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+.logo {
+  font-size: 36px;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav li {
+  margin-left: 20px;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+}
+nav a:hover {
+  font-weight: 700;
+}
+.hero {
+  background-image: url(Icon.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.description {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.button {
+  display: inline-block;
+  background-color: #FFC107;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #F1B607;
+}
+.features {
+  background-color: #848;
+  padding: 100px 0;
+  text-align: center;
+}
+.features h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.feature {
+  width: 300px;
+  margin: 0 30px;
+  text-align: left;
+}
+.feature img {
+  display: block;
+  margin-bottom: 20px;
+}
+.feature h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.feature p {
+  font-size: 16px;
+}
+.download {
+  background-color: #333;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+.download h2 {
+font-size: 48px;
+font-weight: 700;
+margin-bottom: 40px;
+
+}
+.download .button {
+background-color: #fff;
+color: #333;
+padding: 15px 40px;
+font-size: 20px;
+font-weight: 700;
+border-radius: 30px;
+transition: background-color 0.3s ease;
+}
+.download .button:hover {
+background-color: #F1B607;
+color: #fff;
+}
+
+/* Additional styles */
+.features-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.feature {
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+margin: 0 20px 40px;
+border-radius: 10px;
+text-align: center;
+transition: box-shadow 0.3s ease;
+}
+.feature:hover {
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.feature img {
+width: 100%;
+max-width: 150px;
+margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+.hero h2 {
+font-size: 36px;
+}
+.description {
+font-size: 18px;
+}
+.feature {
+width: 100%;
+margin: 0 0 40px;
+}
+.features-container {
+flex-direction: column;
+align-items: center;
+}
+}
